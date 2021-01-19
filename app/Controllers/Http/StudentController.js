@@ -1,5 +1,5 @@
 'use strict'
-
+//teste
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
 /** @typedef {import('@adonisjs/framework/src/View')} View */
@@ -97,6 +97,7 @@ async authenticated({request, auth}){
     student.merge(data);
     await student.save();
     return student
+    //
   }
 
   /**
