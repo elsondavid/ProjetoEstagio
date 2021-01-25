@@ -133,6 +133,9 @@ class ClassroomController {
    * @param {Response} ctx.response
    */
   async destroy ({ params, request, response }) {
+
+    const classroom = await Classroom.findOrFail(params.id)
+    await classroom.delete();
   }
 }
 
